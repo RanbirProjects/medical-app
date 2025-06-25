@@ -1,0 +1,100 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #EEF2F2;
+  color: #172623;
+}
+
+.medilens-bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #EEF2F2 60%, #B1D3CF 100%);
+}
+
+.medilens-header {
+  padding: 4rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.medilens-header h1 {
+  color: #556B66;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.medilens-header h2 {
+  color: #73908A;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.subtitle {
+  color: #A5C2BC;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+button.primary {
+  background: #556B66;
+  color: #EEF2F2;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button.primary:hover {
+  background: #172623;
+}
+
+button.secondary {
+  background: #B1D3CF;
+  color: #172623;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button.secondary:hover {
+  background: #A5C2BC;
+}
+
+.medilens-footer {
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  color: #556B66;
+  font-size: 1rem;
+}
+
+.medilens-footer strong {
+  color: #172623;
+}
+
+.dribbble-ref {
+  font-size: 0.9rem;
+  color: #A5C2BC;
+}
+
+.dribbble-ref a {
+  color: #73908A;
+  text-decoration: none;
+}
+.dribbble-ref a:hover {
+  text-decoration: underline;
+}

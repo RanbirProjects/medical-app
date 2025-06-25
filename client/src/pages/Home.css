@@ -1,0 +1,267 @@
+.home-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(135deg, #EEF2F2 60%, #B1D3CF 100%);
+  overflow: hidden;
+}
+
+/* Floating elements */
+.floating-element {
+  position: absolute;
+  font-size: 2rem;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+/* Mouse follower */
+.mouse-follower {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, rgba(85, 107, 102, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: multiply;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 3rem;
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0 2px 16px #B1D3CF33;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(10px);
+}
+
+.hero-content h1 {
+  color: #556B66;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #556B66, #73908A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-content h2 {
+  color: #73908A;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  color: #172623;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.hero-features {
+  margin-bottom: 2rem;
+}
+
+.hero-features strong {
+  color: #556B66;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background: rgba(177, 211, 207, 0.3);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #172623;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.feature-icon {
+  font-size: 1.2rem;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px #B1D3CF44;
+}
+
+.hero-cta.primary {
+  background: #556B66;
+  color: #EEF2F2;
+}
+
+.hero-cta.primary:hover {
+  background: #172623;
+  color: #EEF2F2;
+}
+
+.hero-cta.secondary {
+  background: #B1D3CF;
+  color: #172623;
+}
+
+.hero-cta.secondary:hover {
+  background: #A5C2BC;
+  color: #172623;
+}
+
+.scroll-indicator {
+  text-align: center;
+  color: #73908A;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.scroll-arrow {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.hero-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.22;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-team-img {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  width: 180px;
+  max-width: 20vw;
+  opacity: 0.8;
+  z-index: 3;
+  pointer-events: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px #B1D3CF55;
+}
+
+.hero-hospital-img {
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  width: 180px;
+  max-width: 20vw;
+  opacity: 0.8;
+  z-index: 3;
+  pointer-events: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px #B1D3CF55;
+}
+
+.hero-heart-symbol {
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
+  font-size: 4rem;
+  opacity: 0.8;
+  z-index: 3;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 16px #B1D3CF55);
+  cursor: pointer;
+}
+
+.hero-stethoscope-symbol {
+  position: absolute;
+  bottom: 2vh;
+  right: 3vw;
+  font-size: 4rem;
+  opacity: 0.8;
+  z-index: 3;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 16px #B1D3CF55);
+  cursor: pointer;
+}
+
+.hero-overlay-img {
+  position: absolute;
+  bottom: 0;
+  right: 3vw;
+  width: 220px;
+  max-width: 30vw;
+  opacity: 0.7;
+  z-index: 3;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 16px #B1D3CF55);
+}
+
+@media (max-width: 700px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content h2 {
+    font-size: 1.3rem;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-team-img,
+  .hero-hospital-img {
+    width: 100px;
+    top: 1vh;
+  }
+  .hero-heart-symbol,
+  .hero-stethoscope-symbol {
+    font-size: 2.5rem;
+    bottom: 1vh;
+  }
+  .floating-element {
+    font-size: 1.5rem;
+  }
+  .hero-overlay-img {
+    width: 120px;
+    right: 1vw;
+  }
+} 
